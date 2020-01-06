@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_activity_main"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context="com.example.inceptive.navigation.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_linearLayout"
+        android:orientation="vertical">
+        <include layout="@layout/header" />
+
+
+        <FrameLayout
+            android:id="@+id/main_content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_vieww"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#F2FFFFFF"
+        android:dividerHeight="0dp"
+        android:divider="@android:color/transparent"
+        android:choiceMode="singleChoice"
+        android:fitsSystemWindows="true">
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_gravity="left"
+        android:id="@+id/main_relativeLayout"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:gravity="start"
+            android:id="@+id/main_linearLayout2"
+            android:background="@drawable/nav31">
+
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="65dp"
+                android:layout_marginLeft="-15dp"
+                app:srcCompat="@drawable/place_holder"
+                android:id="@+id/main_imageView"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hi"
+                android:textSize="23dp"
+                android:fontFamily="font_family_medium"
+                android:textStyle="bold"
+
+                android:layout_marginLeft="-100dp"
+                android:layout_marginTop="140dp"
+                android:textColor="@color/white"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inceptive"
+                android:textSize="23dp"
+                android:fontFamily="font_family_medium"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/managerfname"
+                android:layout_marginTop="140dp"
+                android:textColor="@color/white"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="15dp"
+                android:fontFamily="font_family_medium"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:id="@+id/manageremail"
+                android:layout_marginLeft="-190dp"
+                android:layout_marginTop="140dp"
+                android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:gravity="left"
+            android:layout_marginTop="90dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/main_linearLayout3"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="50dp"
+                android:layout_marginTop="100dp"
+
+                >
+
+                <ImageView
+
+                    android:layout_width="20dp"
+                    app:srcCompat="@drawable/eye"
+                    android:layout_height="23dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/main_viewapply"
+                    android:text="All Leave"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="font_family_medium"
+                   android:textColor="@color/black"
+                    android:layout_marginTop="13dp"
+
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                  android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:layout_height="70dp"
+                  android:layout_marginTop="-30dp"
+                  android:layout_marginBottom="5dp">
+
+            <ImageView
+
+                  android:layout_width="20dp"
+                  app:srcCompat="@drawable/pending2"
+                  android:layout_height="30dp"
+                    android:layout_marginLeft="2dp"
+                  android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/main_dashboard"
+                android:layout_marginTop="26dp"
+                android:textSize="16dp"
+                android:text="Pending Application"
+                android:layout_marginLeft="22dp"
+                android:fontFamily="font_family_medium"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="50dp"
+            android:layout_marginTop="-27dp"
+
+          >
+
+            <ImageView
+
+                android:layout_width="20dp"
+                android:src="@drawable/prfl"
+                android:layout_height="25dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/main_profile"
+                android:text="Employee Profile"
+                android:layout_marginTop="13dp"
+                android:textSize="16dp"
+                android:layout_marginLeft="18dp"
+                android:fontFamily="font_family_medium"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="60dp"
+            android:layout_marginTop="-12dp"
+            >
+
+            <ImageView
+
+                android:layout_width="25dp"
+                android:src="@drawable/logout_black"
+                android:layout_height="20dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="10dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:id="@+id/main_logout"
+                android:text="Logout"
+                android:textSize="16dp"
+                android:fontFamily="font_family_medium"
+                android:textColor="@color/black"
+                android:layout_marginTop="9dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</android.support.design.widget.NavigationView>
+
+
+
+</android.support.v4.widget.DrawerLayout>

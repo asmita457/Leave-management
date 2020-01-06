@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+<ScrollView
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration"
+            android:gravity="start"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:layout_gravity="start"
+            android:paddingLeft="50dp"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            app:cardElevation="2dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="@drawable/loginbutton">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="60dp"
+                        android:hint="From Date"
+                        android:gravity="start"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black"
+                        android:id="@+id/edtfrom_Date"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="5dp"
+                        />
+
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="-40dp"
+                        android:background="@android:color/darker_gray" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="-5dp">
+
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="60dp"
+                        android:hint="To Date"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:id="@+id/edtto_Date"
+                        android:gravity="start"/>
+
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="-40dp"
+                        android:background="@android:color/darker_gray" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/ic_action_calendar"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="-8dp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leave Count"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+
+            android:padding="5dp"
+            android:layout_gravity="start"
+            android:layout_marginTop="15dp"/>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/loginbutton"
+                android:layout_height="35dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="start"
+                    android:textSize="15dp"
+                    android:paddingLeft="10dp"
+                    android:inputType="number"
+                    android:background="@drawable/loginbutton"
+                    android:id="@+id/counttextview"
+                    android:hint="No Of Leaves Count"
+                    android:textColor="@color/black"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leave Type"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+
+            android:layout_gravity="start"
+            android:gravity="start"/>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/white">
+
+                <Spinner
+                    android:id="@+id/leaveType_spinner"
+                    android:background="@drawable/loginbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                </Spinner>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reason"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="start"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+
+            android:padding="2dp"/>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            app:cardElevation="5dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/white"
+                android:layout_gravity="center">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/reason_desc"
+                    android:layout_gravity="start"
+                    android:gravity="start"
+                    android:background="@drawable/loginbutton"
+                    android:textColor="@color/black"
+                    android:maxLength="100"
+                    android:maxLines="8"
+                    android:hint="Description"
+                    android:padding="5dp"
+                    android:paddingLeft="10dp"
+                    />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apply"
+
+            android:id="@+id/apply_btn"
+            android:theme="@style/MyButton"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+        <!--<android.support.v7.widget.AppCompatSpinner-->
+        <!--android:id="@+id/categorySpinner"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:spinnerMode="dialog"-->
+        <!---->
+        <!--style="@style/Widget.AppCompat.Spinner.Underlined" />-->
+
+    </LinearLayout>
+
+
+
+</ScrollView>
+
+
+
+
+
+
+</RelativeLayout>

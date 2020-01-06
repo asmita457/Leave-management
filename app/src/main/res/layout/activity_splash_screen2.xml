@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splashscreen2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+  android:layout_gravity="center"
+    android:layoutAnimation="@anim/layout_animation_fall_down"
+
+    android:gravity="center"
+    tools:context="com.example.inceptive.navigation.SplashScreen2">
+
+
+
+    <ImageView
+        android:id="@+id/logg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_marginLeft="45dp"
+        />
+<TextView
+    android:id="@+id/inccons"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Inceptive Consulting"
+    android:textSize="30dp"
+    android:layout_marginLeft="10dp"
+    android:textColor="@color/colorPrimary"
+    android:textStyle="bold"
+    android:layout_below="@+id/logg"
+    android:padding="10dp"/>
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="200dp"-->
+
+        <!--android:id="@+id/splash_linearLayout"-->
+        <!--android:background="@drawable/im6"-->
+        <!--android:layout_marginLeft="25dp"-->
+        <!--android:orientation="vertical"-->
+<!--android:layout_marginTop="200dp"-->
+      <!--&gt;-->
+
+
+
+
+
+<!--</LinearLayout>-->
+
+</RelativeLayout>

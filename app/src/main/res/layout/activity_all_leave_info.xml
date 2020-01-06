@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_all_leave_info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.inceptive.navigation.AllLeaveInfo">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <TextView
+            android:text="From Date:"
+
+            android:layout_width="wrap_content"
+            android:textSize="16dp"
+            android:fontFamily="@string/font_family_medium"
+            android:layout_below="@+id/managerhome_empfirstname"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:id="@+id/managerhome_empfrom1" />
+
+        <TextView
+            android:text="From Date"
+            android:layout_width="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/blck"
+
+            android:fontFamily="@string/font_family_medium"
+            android:layout_marginLeft="45dp"
+            android:layout_below="@+id/managerhome_empfirstname"
+            android:layout_height="wrap_content"
+            android:id="@+id/managerhome_empfrom" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <TextView
+            android:text="To Date:"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp"
+            android:fontFamily="@string/font_family_medium"
+            android:layout_height="wrap_content"
+            android:id="@+id/managerhome_empto1"
+            android:layout_below="@+id/managerhome_empfrom"
+            android:layout_alignLeft="@+id/managerhome_empfrom"
+            android:layout_alignStart="@+id/managerhome_empfrom" />
+
+        <TextView
+            android:text="To Date"
+            android:textColor="@color/blck"
+
+            android:layout_width="wrap_content"
+            android:textSize="15dp"
+            android:fontFamily="@string/font_family_medium"
+            android:layout_marginLeft="65dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/managerhome_empto"
+          />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <TextView
+            android:text="Leave Type:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp"
+            android:fontFamily="@string/font_family_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/managerhome_empstatus1" />
+
+        <TextView
+            android:text="Leave Type"
+            android:textSize="15dp"
+            android:textColor="@color/blck"
+
+            android:fontFamily="@string/font_family_medium"
+            android:layout_marginLeft="39dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/managerhome_empstatus" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <TextView
+            android:text="Status:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp"
+            android:fontFamily="@string/font_family_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/managerhome_empstatus12"
+            android:layout_alignRight="@+id/managerhome_empto"
+            android:layout_alignEnd="@+id/managerhome_empto" />
+
+        <TextView
+            android:text="Status"
+            android:textColor="@color/blck"
+
+            android:textSize="15dp"
+            android:fontFamily="@string/font_family_medium"
+            android:layout_marginLeft="75dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/managerhome_empstatuss"
+            android:layout_alignRight="@+id/managerhome_empto"
+            android:layout_alignEnd="@+id/managerhome_empto" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <TextView
+            android:text="Reason:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp"
+            android:fontFamily="@string/font_family_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/managerhome_empreason1"
+            android:layout_below="@+id/managerhome_empstatus"
+            android:layout_alignRight="@+id/managerhome_empto"
+            android:layout_alignEnd="@+id/managerhome_empto" />
+
+        <TextView
+            android:text="Reason"
+            android:textSize="15dp"
+            android:textColor="@color/blck"
+
+            android:fontFamily="@string/font_family_medium"
+            android:layout_marginLeft="67dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/managerhome_empreason"
+            android:layout_below="@+id/managerhome_empstatus"
+            android:layout_alignRight="@+id/managerhome_empto"
+            android:layout_alignEnd="@+id/managerhome_empto" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

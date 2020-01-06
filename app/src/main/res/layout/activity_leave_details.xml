@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.inceptive.fragment.LeaveDetails">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:id="@+id/Relativelayout1"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Leave Details"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerInParent="true"
+        android:fontFamily="@string/font_family_medium"
+        android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/detailprof"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/Relativelayout1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <TextView
+            android:text="From Date:"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:fontFamily="font_family_medium"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewleave_fromdate1"/>
+
+        <TextView
+            android:text="From Date"
+            android:fontFamily="font_family_medium"
+            android:textSize="14dp"
+            android:textColor="@color/blck"
+
+            android:layout_marginLeft="73dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewleave_fromdate"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="2dp">
+
+        <TextView
+            android:text="To Date:"
+            android:fontFamily="font_family_medium"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewleave_todate1"
+            android:layout_below="@+id/viewleave_fromdate" />
+
+        <TextView
+            android:text="To Date"
+            android:textSize="14dp"
+            android:textColor="@color/blck"
+            android:fontFamily="font_family_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewleave_todate"
+            android:layout_below="@+id/viewleave_fromdate"
+            android:layout_marginLeft="91dp" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="2dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leave Id:"
+            android:textSize="15dp"
+            android:fontFamily="font_family_medium"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/man_leave_id"/>
+
+        <TextView
+
+            android:fontFamily="font_family_medium"
+            android:textSize="14dp"
+            android:textColor="@color/blck"
+
+            android:layout_marginLeft="87dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/man_leaveid"
+            android:text="Leave Id"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="2dp">
+
+        <TextView
+            android:text="Remaining Leave:"
+            android:fontFamily="font_family_medium"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/remainleave"
+            android:layout_below="@+id/viewleave_todate" />
+
+        <TextView
+            android:text="Remaining Leave"
+            android:textSize="14dp"
+            android:textColor="@color/blck"
+
+            android:fontFamily="@string/font_family_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/remain_leave"
+            android:layout_below="@+id/viewleave_todate"
+            android:layout_marginLeft="29dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="2dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leave Count:"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:fontFamily="font_family_medium"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/man_leave_count"/>
+
+        <TextView
+            android:fontFamily="font_family_medium"
+            android:textSize="14dp"
+            android:textColor="@color/blck"
+
+            android:layout_marginLeft="62dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/man_leavecount"
+            android:text="count"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="2dp">
+
+        <TextView
+            android:text="Reason:"
+            android:fontFamily="font_family_medium"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reason1"
+            android:textStyle="bold"
+            android:layout_below="@+id/viewleave_todate" />
+
+        <TextView
+            android:text="Reason"
+            android:textSize="14dp"
+            android:textColor="@color/blck"
+            android:fontFamily="font_family_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reason"
+            android:layout_below="@+id/viewleave_todate"
+            android:layout_marginLeft="92dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/layout5"
+        android:layout_marginTop="10dp"
+
+        android:padding="2dp">
+
+        <TextView
+            android:text="Status:"
+            android:fontFamily="font_family_medium"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/status1"
+            android:layout_below="@+id/reason" />
+
+        <Spinner
+            android:text="Status"
+            android:textSize="14dp"
+            android:fontFamily="font_family_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textStyle="bold"
+            android:id="@+id/spinner"
+            android:layout_below="@+id/reason"
+            android:layout_marginLeft="92dp" />
+
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_below="@+id/detailprof"
+     android:layout_height="wrap_content">
+
+     <Button
+         android:layout_width="wrap_content"
+         android:text="Submit"
+         android:paddingRight="20dp"
+         android:paddingLeft="20dp"
+         android:gravity="center"
+         android:layout_centerHorizontal="true"
+         android:layout_height="wrap_content" />
+
+ </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#495ee2</color>
+    <color name="colorPrimaryDark">#949ee4</color>
+    <color name="colorAccent">#f5f4afdb</color>
+    <color name="yellow">#f9fc8f</color>
+    <color name="black_overlay">#6618e4b1</color>
+
+    <color name="blue">#2d5cf1f1</color>
+    <color name="light_green">#f557f457</color>
+
+    <color name="green">#ee89f18f</color>
+    <color name="dark_green">#ee2a9130</color>
+    <color name="black">#121111</color>
+    <color name="blck">#5e5c5c</color>
+    <color name="myPeach"> #f8a055</color>
+
+    <color name="gray"> #e9e9e9</color>
+    <color name="blu">#5f73e4</color>
+    <color name="skyblue">#62efef</color>
+    <color name="ylw">#f1c564</color>
+    <color name="yellow2">#ebfc02</color>
+
+
+    <color name="darkblue">#8595fa</color>
+    <color name="pink">#f4125f</color>
+
+    <color name="red">#a34465</color>
+    <color name="light_red">#f93d56</color>
+    <color name="faintblue">#62f4e6</color>
+    <color name="brown">#eabeaf</color>
+    <color name="brown1">#fcd5c7</color>
+    <color name="brown2">#f5dfd8</color>
+    <color name="orange">#f48864</color>
+    <color name="orng">#f5ad75</color>
+    <color name="blue_gray">#90A4AE</color>
+
+    <color name="white">#ffffff</color>
+    <drawable name="option_on">#EBEBEB</drawable>
+    <drawable name="option_off">#CC0000</drawable>
+</resources>

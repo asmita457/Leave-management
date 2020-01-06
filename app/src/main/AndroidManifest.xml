@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.inceptive.navigation">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="Leave Management"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen2">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:launchMode="singleInstance" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ManagerLogin" />
+        <activity android:name=".EmployeeLogin" />
+        <activity android:name=".EmployeeHome" />
+
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.VIEW" /> -->
+
+
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- <category android:name="android.intent.category.BROWSABLE" /> -->
+        <!-- &lt;!&ndash; -->
+        <!-- ATTENTION: This data URL was auto-generated. We recommend that you use the HTTP scheme. -->
+        <!-- TODO: Change the host or pathPrefix as necessary. -->
+        <!-- &ndash;&gt; -->
+        <!-- <data -->
+        <!-- android:host="[ENTER-YOUR-HTTP-HOST-HERE]" -->
+        <!-- android:pathPrefix="/manageradapter" -->
+        <!-- android:scheme="http" /> -->
+        <!-- </intent-filter> -->
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="e906216fb24d971716e8fccdb1465767ba371c5b" />
+
+        <activity android:name="com.example.inceptive.fragment.Profile$DetailedInfo" />
+        <activity android:name=".DetailedInfor" />
+        <activity android:name=".AllLeaveInfo" />
+        <activity android:name="com.example.inceptive.fragment.LeaveDetails"></activity>
+    </application>
+
+</manifest>

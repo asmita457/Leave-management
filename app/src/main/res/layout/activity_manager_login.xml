@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/managerlogin_linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:id="@+id/managerlogin_linearLayout2"
+        android:layout_height="50dp"
+        android:layout_weight="3.93"
+        android:gravity="center"
+        android:weightSum="1">
+
+
+        <ImageView
+            android:layout_width="234dp"
+            android:layout_height="117dp"
+            app:srcCompat="@drawable/logo1"
+            android:id="@+id/manager_imageView"
+
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/manager_scrollview"
+        android:layout_weight="1"
+
+        >
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="204dp"
+            android:gravity="center"
+            android:id="@+id/managerlogin_linearLayout3"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="70dp"
+            android:layout_weight="1.75">
+
+
+
+
+            <EditText
+                android:id="@+id/manager_edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/edt_bg"
+                android:hint="Email Id"
+                android:imeOptions="actionNext"
+                android:drawableLeft="@drawable/ic_action_mail"
+                android:inputType="textEmailAddress|text|textNoSuggestions"
+                android:padding="12dp"
+                />
+
+
+            <EditText
+                android:id="@+id/manager_edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edt_bg"
+                android:hint="Password"
+
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/ic_action_lock"
+                android:padding="12dp"
+                />
+
+
+            <!--<TextView-->
+            <!--android:id="@+id/tvSubmit"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:background="@drawable/red_btn_bg"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="12dp"-->
+            <!--android:text="Submit"-->
+            <!--android:textAllCaps="true"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textStyle="bold" />-->
+            <!---->
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/red_btn_bg"
+                android:text="Submit"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:id="@+id/manager_loginbtn"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

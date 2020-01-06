@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+       android:background="@color/white">
+<!--<EditText-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_marginLeft="8dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/gray"-->
+    <!--android:paddingTop="5dp"-->
+    <!--android:layout_marginRight="8dp"-->
+    <!--android:paddingBottom="5dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:drawableLeft="@drawable/search"-->
+    <!--android:hint="Search Here"-->
+
+    <!--android:id="@+id/managersearch"/>-->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/linnnnlay"
+        android:paddingTop="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingRight="10dp"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@null"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/search"
+                android:hint="Search here"
+                android:id="@+id/managersearch"/>
+            <ImageView
+                android:id="@+id/crossss"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/clear"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:padding="10dp"
+        android:id="@+id/recycler_view_manager"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/linnnnlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>
